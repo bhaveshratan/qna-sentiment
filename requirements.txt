@@ -1,0 +1,11 @@
+dash
+nltk
+pandas
+numpy
+transformers
+dash-bootstrap-components
+requests
+textblob
+plotly
+gunicorn
+tensorflow
