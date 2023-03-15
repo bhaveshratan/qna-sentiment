@@ -4,9 +4,6 @@ from dash import Dash,Input,Output,dcc,html,State,dash_table
 import requests
 from textblob import TextBlob
 import plotly.express as px
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from nltk.sentiment.util import *
-from nltk import tokenize
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
