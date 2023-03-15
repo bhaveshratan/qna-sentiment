@@ -1,0 +1,146 @@
+.para_and_quote{
+margin-top : 2%;
+border-style:double;
+margin-left:5%;
+margin-right:5%;
+border-radius: 5px;
+background-color : #F8F8F8;
+padding : 10px;
+}
+.para_container{
+min-height : 300px;
+height  :auto;
+border-style:double;
+border-radius: 5px;
+
+
+
+}
+.quote_container{
+min-height : 300px;
+height  :auto;
+border-style:double;
+border-radius: 5px;
+margin-left : 10px;
+
+}
+
+.card_quote{
+margin-top : 5%;
+justify-content : center;
+min-height : 35vh;
+height : auto;
+margin-bottom : 5%;
+align-items : center;
+text-align : center;
+
+}
+
+.question_go_box{
+margin-top : 2%;
+border-style:double;
+margin-left:5%;
+margin-right:5%;
+border-radius: 5px;
+background-color : #F8F8F8;
+/*padding : 2px;*/
+min-height : 10px;
+height : auto;
+justify-content : center;
+padding : 2px;
+}
+
+.col_container{
+justify-content : center;
+align-items : center;
+text-align : center;
+margin-top : 2%;
+}
+.dbc_button{
+width : 50%;
+}
+.answer_and_emoji{
+margin-top : 2%;
+border-style:double;
+margin-left:5%;
+margin-right:5%;
+border-radius: 5px;
+background-color : #F8F8F8;
+/*padding : 2px;*/
+min-height : 10px;
+height : auto;
+justify-content : center;
+}
+
+.noun_rows{
+margin-top : 2%;
+border-style:double;
+margin-left:5%;
+margin-right:5%;
+border-radius: 5px;
+background-color : #F8F8F8;
+/*padding : 2px;*/
+min-height : 10px;
+height : auto;
+justify-content : center;
+}
+
+.noun_class{
+margin-left:0%;
+}
+.noun_value{
+margin-left:0%;
+}
+
+.table_col{
+align-items : center;
+text-align : center;
+margin-top : 1%;
+margin-right : 1%;
+margin-left : 1%;
+}
+.graph_col{
+align-items : center;
+text-align : center;
+margin-top : 1%;
+margin-right : 1%;
+margin-left : 1%;
+}
+
+.title_for_textblob{
+
+margin-top : 1%;
+border-style:ridge;
+margin-left:5%;
+margin-right:5%;
+border-radius: 5px;
+background-color : #F8F8F8;
+/*padding : 2px;*/
+min-height : 10px;
+height : auto;
+justify-content : center;
+
+}
+
+.overall_col{
+justify-content : center;
+align-items : center;
+text-align : center;
+
+}
+
+.low_head{
+border-style:inset;
+border-radius: 5px;
+border-width: 0.3px;
+display : inline;
+padding : 4px;
+}
+
+.disclaimer{
+margin-left:5%;
+margin-right:5%;
+font-family : Lucida Console;
+font-size : 14px;
+font-weight : lighter;
+}
