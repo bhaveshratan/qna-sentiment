@@ -95,8 +95,8 @@ button = dbc.Container(
 )
 
 
-app = Dash(meta_tags=[{'name':'viewport', 'content':'width=device-width'}],prevent_initial_callbacks=True)
-server = app.server
+app_dash = Dash(meta_tags=[{'name':'viewport', 'content':'width=device-width'}],prevent_initial_callbacks=True)
+server = app_dash.server
 
 navbar = dbc.NavbarSimple(children = [
     html.Img(src = 'https://cdn-icons-png.flaticon.com/512/945/945458.png?w=740&t=st=1678701855~exp=1678702455~hmac=6f067e5f6a47a0cd6810a7ffb2598c9a41046bb8bbdfc1aaa538ec3eeed80748',height = '50px',)
@@ -194,10 +194,10 @@ disclaimer = html.Div([
 ], className='disclaimer')
 
 
-app.layout = html.Div([navbar,para_quote,question_go,answer_emoji,nouns,overall,textblob_analysis,html.Br(),html.Br(),disclaimer,html.Br(),html.Br()],className='main_container')
+app_dash.layout = html.Div([navbar,para_quote,question_go,answer_emoji,nouns,overall,textblob_analysis,html.Br(),html.Br(),disclaimer,html.Br(),html.Br()],className='main_container')
 
 
-@app.callback(
+@app_dash.callback(
     Output('answer_id','children'),
     Output('score_id', 'children'),
     Input('button_id', 'n_clicks'),
@@ -215,7 +215,7 @@ def update_answer(clicked,text_input,question_input):
 
     else: return '',''
 
-@app.callback(
+@app_dash.callback(
 
     Output('noun_id', 'children'),
     Output('number_noun', 'children'),
@@ -262,7 +262,7 @@ def update_others(clicked,text_input):
     else:
             return '','','','','','',''
 
-@app.callback(
+@app_dash.callback(
     Output('datable_interactive','data'),
     Output('datable_interactive','columns'),
     Output('datable_interactive','style_cell_conditional'),
@@ -333,7 +333,7 @@ def update_sentiment_table(clicked,text_input):
 
 
 
-@app.callback(
+@app_dash.callback(
 
     Output('scatter_graph1','figure'),
     Output('bar_graph2','figure'),
@@ -446,5 +446,5 @@ def update_graphs(all_rows_data,selected_rows_indices):
 
 
 if __name__ == '__main__':
-    app.run_server(debug = True)
+    app_dash.run_server(debug = True)
 
